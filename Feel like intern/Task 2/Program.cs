@@ -8,9 +8,9 @@ if (number_one < number_two)
     Console.Write("Число ");
     Console.Write(number_one);
     Console.Write(" меньше числа ");
-    Console.Write(number_two);
+    Console.WriteLine(number_two);
     Console.Write("max = ");
-    Console.Write(number_two;
+    Console.Write(number_two);
     Console.Write(", min = ");
     Console.Write(number_one);
 }
@@ -19,9 +19,9 @@ else
     Console.Write("Число ");
     Console.Write(number_one);
     Console.Write(" больше числа ");
-    Console.Write(number_two);
+    Console.WriteLine(number_two);
     Console.Write("max = ");
-    Console.Write(number_one;
+    Console.Write(number_one);
     Console.Write(", min = ");
     Console.Write(number_two);
 }
