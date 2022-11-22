@@ -5,23 +5,11 @@ Console.WriteLine("Введите второе число, b = ");
 Double number_two = Convert.ToDouble(Console.ReadLine());
 if (number_one < number_two) 
 {
-    Console.Write("Число ");
-    Console.Write(number_one);
-    Console.Write(" меньше числа ");
-    Console.WriteLine(number_two);
-    Console.Write("max = ");
-    Console.Write(number_two);
-    Console.Write(", min = ");
-    Console.Write(number_one);
+    Console.Write($"Число {number_one} меньше числа {number_two}");
+    Console.Write($"max = {number_two}, min = {number_one}");
 }
 else
 {
-    Console.Write("Число ");
-    Console.Write(number_one);
-    Console.Write(" больше числа ");
-    Console.WriteLine(number_two);
-    Console.Write("max = ");
-    Console.Write(number_one);
-    Console.Write(", min = ");
-    Console.Write(number_two);
+    Console.Write($"Число {number_one} больше числа {number_two}");
+    Console.Write($"max = {number_one}, min = {number_two}");
 }
