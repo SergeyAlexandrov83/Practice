@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Программа покажет название дня недели восле введения числа.");
+﻿Console.WriteLine("Программа выяснит является ли номер дня недели выходным.");
 Console.WriteLine("Введите число: ");
 Double number = Convert.ToDouble(Console.ReadLine());
 if (number > 0 && number < 6) 

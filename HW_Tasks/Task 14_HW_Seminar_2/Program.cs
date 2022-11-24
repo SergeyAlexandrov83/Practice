@@ -1,13 +1,13 @@
 ﻿Console.WriteLine("Программа найдет третью цифру введенного целого положительногос числа, или сообщит, что она отсутствует.");
 Console.WriteLine("Введите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+long number = Convert.ToInt64(Console.ReadLine());
 if (number < 100)
 {
     Console.WriteLine("Третья цифра отсутствует!");
 }
 else
 {
-    int tempNumber = number;
+    long tempNumber = number;
     while (tempNumber > 999)
     {
         tempNumber /= 10; 
