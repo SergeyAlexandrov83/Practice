@@ -1,4 +1,5 @@
-﻿double input() {
+﻿// Успел)) Интересно я сам пойму то тут написано через месяц? xD
+double input() {
     Console.WriteLine("Введите первую координату: ");
     double coord1 = Convert.ToDouble(Console.ReadLine());
     Console.WriteLine("Введите вторую координату: ");
