@@ -11,18 +11,18 @@ Console.WriteLine("Программа найдет длину отрезка м�
 Console.WriteLine("Введите '2' если работаем в 2D и '3' если работаем в 3D: ");
 int workField = Convert.ToInt16(Console.ReadLine());
 Console.WriteLine("Введите координаты по оси X: ");
-double firstCoordDeltaPow2 = input();
+double x1x2DeltaPow2 = input();
 Console.WriteLine("Введите координаты по оси Y: ");
-double secondCoordDeltaPow2 = input();
-double XY = Math.Sqrt(firstCoordDeltaPow2+secondCoordDeltaPow2);
+double y1y2DeltaPow2 = input();
 if (workField == 3)
 {
     Console.WriteLine("Введите координаты по оси Z: ");
-    double thirdCoordDeltaPow2 = input();
-    double XYZ = Math.Sqrt(firstCoordDeltaPow2+secondCoordDeltaPow2+thirdCoordDeltaPow2);
-    Console.WriteLine($"Длинна отрезка = {XYZ}");
+    double z1z2DeltaPow2 = input();
+    double XYZ = x1x2DeltaPow2+y1y2DeltaPow2+z1z2DeltaPow2;
+    Console.WriteLine($"Длинна отрезка = {Math.Sqrt(XYZ)}");
 }
 else
 {
-    Console.WriteLine($"Длинна отрезка = {XY}");
+    double XY = x1x2DeltaPow2+y1y2DeltaPow2;
+    Console.WriteLine($"Длинна отрезка = {Math.Sqrt(XY)}");
 }
