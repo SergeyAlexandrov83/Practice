@@ -3,10 +3,10 @@ Console.WriteLine("Введите число А: ");
 int numberA = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число B: ");
 int numberB = Convert.ToInt32(Console.ReadLine());
-
-while (numberB>0) 
+int answer = numberA;
+while (numberB > 1)
 {
-    numberA *= numberA;
+    answer *= numberA;
     numberB -= 1;
 }
- Console.WriteLine($"{numberA}");
+Console.WriteLine(answer);
