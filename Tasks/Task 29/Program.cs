@@ -1,10 +1,17 @@
 ﻿Console.WriteLine("Программа определит произведение всех числел от 1 до N!");
 Console.WriteLine("Введите число N: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int sum = 1;
-for (int i = 2; i <= number; i++)
+double mult = 1;
+if (number > 0)
 {
-    sum *= i;
+    for (int i = 2; i <= number; i++)
+        {
+            mult *= i;
+        }
+    Console.WriteLine($"Произведение всех числел от 1 до {number} равняется {mult}!");
+}
+else 
+{
+    Console.WriteLine($"Введите положительное число!");
 }
 
-Console.WriteLine($"Произведение всех числел от 1 до {number} равняется {sum}!");
