@@ -11,13 +11,13 @@
 // var max = array.Max();
 // Console.WriteLine($"Разница между максимальным и минимальным значениями элементов массива равна {max - min}");
 
-int[] CreateArray(int size, int maximum = 100, int digits = 2)
+int[] CreateArray(int size, int leftrange = -100, int rightrange = 100)
 {
     int[] massive = new int[size];
     int i = 0;
     while (i <= (massive.Length - 1))
     {
-        massive[i] = new Math.Round(new Random().NextDouble() * maximum, digits);
+        massive[i] = new Random().Next(leftrange, rightrange);
         i++;
     }
     Console.WriteLine($"Массив: {string.Join(", ", massive)}");
