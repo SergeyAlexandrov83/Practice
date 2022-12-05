@@ -12,12 +12,20 @@
 int[] array = CreateArray();
 Console.WriteLine("Введите число для поиска: ");
 int number = Convert.ToInt32(Console.ReadLine());
-var isTrue = array.Contains(number);
-if (isTrue) 
+bool isTrue = false;
+for (int i=0; i<array.Length; i++)
 {
-    Console.WriteLine($"Число {number} найдено на позиции с индексом {array.ToList().IndexOf(number)}");
+    if (array[i] == number)
+    {
+        isTrue = true;
+        break;
+    }
+}
+if (isTrue)
+{
+    Console.WriteLine($"Число {number} присутствует в массиве");
 }
 else
 {
-    Console.WriteLine($"Число {number} не найдено!");
+    Console.WriteLine($"Число {number} отсутствует в массиве");
 }

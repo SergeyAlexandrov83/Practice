@@ -4,12 +4,13 @@
     int i = 0;
     while (i <= (massive.Length - 1))
     {
-        massive[i] = new Random().Next(0, 1000);
+        massive[i] = new Random().Next(0, 300);
         i++;
     }
     Console.WriteLine($"Массив: {string.Join(", ", massive)}");
     return massive;
 }
+
 int[] array = CreateArray();
 int i = 0;
 int apple = 0;

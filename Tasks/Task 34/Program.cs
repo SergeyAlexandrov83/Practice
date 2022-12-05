@@ -2,19 +2,13 @@
 int i = 0;
 while (i <= (array.Length - 1))
 {
-    array[i] = new Random().Next(0, 100);
+    array[i] = new Random().Next(-100, 100);
     i++;
 }
 Console.WriteLine($"Массив: {string.Join(", ", array)}");
-int temp = 0;
-int left = 0;
-int right = array.Length - 1;
-while (left < right)
+
+for (i=0; i<array.Length; i++)
 {
-    temp = array[left];
-    array[left] = array[right];
-    array[right] = temp;
-    left++;
-    right--;
+    array[i] *= -1;
 }
 Console.WriteLine($"Массив: {string.Join(", ", array)}");

@@ -1,16 +1,16 @@
-﻿int[] CreateArray()
+﻿int[] CreateArray(int size, int leftrange = -100, int rightrange = 100)
 {
-    int[] massive = new int[new Random().Next(1, 100)];
+    int[] massive = new int[size];
     int i = 0;
     while (i <= (massive.Length - 1))
     {
-        massive[i] = new Random().Next(100, 1000);
+        massive[i] = new Random().Next(leftrange, rightrange);
         i++;
     }
     Console.WriteLine($"Массив: {string.Join(", ", massive)}");
     return massive;
 }
-int[] array = CreateArray();
+int[] array = CreateArray(100);
 int i = 0;
 int even = 0;
 int odd = 0;
